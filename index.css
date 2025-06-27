@@ -1,11 +1,9 @@
 *{margin: 0px;
 padding: 0px;
 }
-
 .body {
     background-color: #181a1b;
 }
-
 header{
     display: flex;
     align-items: center;
@@ -16,7 +14,6 @@ header{
     height: 70px;
     position: sticky;
 }
-
 button{
     background: none;
     border: none;
@@ -26,7 +23,6 @@ button{
     padding: 10px;
     transition: background 0.3s, color 0.3s;
 }
-
 button:hover{
     background-color: rgb(255, 255, 255);
     color: black;
@@ -35,9 +31,6 @@ button:hover{
         transition: transform 0.3s;
     
 }
-
-
-
 footer{
 
     padding: 20px;
@@ -45,7 +38,6 @@ footer{
     background-color: #f8f8f8;
     border-top: 1px solid #000000;
 }
-
 .logo {
     border-radius: 50%;
     width: 60px;               
@@ -60,7 +52,6 @@ footer{
     
    
 }
-
 .content {
     padding: 20px;
     background-color: #000000;
@@ -73,12 +64,9 @@ footer{
     margin: 0px;
     height: 94vh;
 }
-
 #name{color: rgb(82, 75, 75);}
 #wai{color: skyblue;
-    animation: blink 2s infinite;
-;}
-
+    animation: blink 2s infinite;;}
 @keyframes blink {
     0% { opacity: 1; 
             color: rgb(200, 255, 0);}
@@ -87,10 +75,8 @@ footer{
     100% { opacity: 1; 
             color: rgb(255, 0, 0);}
 }
-
 u{color: rgb(136, 113, 113);
     padding-top: 10px;}
-
 #get-started {
     background-color: #00ff95;
     color: rgb(47, 0, 255);
@@ -106,8 +92,6 @@ u{color: rgb(136, 113, 113);
 #wa{
 padding-bottom: 10px;
 }
-
-
 #about{
     margin: 20px 0;
     padding: 20px;
@@ -125,7 +109,6 @@ padding-bottom: 10px;
     justify-content: center;
     margin: 10px;
 }
-
 .name {
     font-size: 24px;
     background-color: #ffffff;
@@ -135,7 +118,6 @@ padding-bottom: 10px;
     box-shadow: 0 2px 4px rgb(124, 94, 94);
     margin-bottom: 10px;  
 }
-
 .paragraph {
     font-size: 16px;
     line-height: 1.5;
@@ -145,8 +127,6 @@ padding-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 .nav-menu {
   display: none;
   flex-direction: column;
@@ -158,11 +138,9 @@ padding-bottom: 10px;
   padding: 10px;
   z-index: 10;
 }
-
 .nav-menu.open {
   display: flex;
 }
-
 #nav-toggle {
   background:none;
   border: none;
@@ -170,7 +148,6 @@ padding-bottom: 10px;
   font-size: 2em;
   cursor: pointer;
 }
-
 .footer {
     display: block;
     align-items: center;
@@ -207,7 +184,6 @@ padding-bottom: 10px;
     transition: transform 0.3s;
     
 }
-
 .Circle2 {
     border-radius: 100%;
     border-color: rgb(0, 255, 191);
@@ -223,7 +199,6 @@ padding-bottom: 10px;
     left: 10px;
     z-index: 2;
 }
-
 .Circle1 {
     padding: 5px;
     margin: 5%;
@@ -240,19 +215,6 @@ padding-bottom: 10px;
     border-width: 5px;
     animation: rotate 1s infinite;
     transition-timing-function: ease;}
-
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-reverse {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .comming-soon {
     position: absolute;
     bottom: 0px;
@@ -264,7 +226,6 @@ padding-bottom: 10px;
     text-align: center;
     background-color: #0586ff;
 }
-
 .footer-message {
     background-color: #f8f8f8;
     font-size: 16px;
@@ -274,64 +235,171 @@ padding-bottom: 10px;
     right: 0%;
     left: 0%;
     padding: 10px;
-    position: absolute;
-}
+    position: absolute;}
 
 #certificate:hover{
         transform: scale(1.1);
         transition: transform 0.3s;
     
 }
+.og-cards {
+    display: inline-flex;
+    position: relative;
+    height: 0px;
+    width: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 120px;
+    padding-bottom: 250px;
+background:linear-gradient(red, blue);
+transition: background-color 0.3s ease-in-out;
+    border: 1px solid #002fff ;
+    border-radius: 5%;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  transition-timing-function: linear;
+  animation: moving-forward 10s infinite;
+  cursor: progress;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+@keyframes rotate-reverse {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.og-cards-reverse {
+    display: inline-flex;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    height: 1vh;
+    width: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 120px;
+    padding-bottom: 250px;
+background:linear-gradient(blue, red);
+    z-index: 0;
+  opacity: 0.5;
+    border: 1px solid #002fff ;
+    border-radius: 5%;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s,ease-in-out;
+  transition-timing-function: linear;
+  animation: moving-backward 20s infinite;
+  cursor: not-allowed;
 
+}
+.cards-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    top: 0%;
+    position: absolute;
+    left: 0%;
+    height: 10px;
+    margin: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.cards-content {
+    color: #000000;
+    border-radius: 8px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0%; 
+    margin: 10px;
+    margin-top: 90px;
+    padding: 20px; background-color: #f0f0f0;
+    border-radius: 8px;
+    flex-direction: row;}
+.cards-footer{
+    background:none;
+
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+}
+.og-cards:hover .cards-footer {
+    opacity: 1;
+    pointer-events: auto;
+    font-weight: bold;
+    color: #fffbfb;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cards-button {
+    background:linear-gradient(to left bottom, #ffffff, #ff0000, #ffe600);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.cards-button:hover {
+    
+    background:linear-gradient(to left bottom, #020024, #090979, #00d4ff);
+    color: #fffbfb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-3px);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-weight: bold;
+}
+.og-cards:hover {
+background: linear-gradient(to left bottom, #020024, #090979, #00d4ff);
+      transform: scale(1.1);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);}
 
 @keyframes moving-forward {
-  0% { left: 100%; right: auto; }
-  25% { left: 50%; right: auto; }
-  50% { left: 0%; right: auto; }
-  51% { left: auto; right: 0%; }
-  75% { left: auto; right: 50%; }
-  100% { left: auto; right: 100%; }
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.og-cards-marquee {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+.og-cards-track {
+  display: flex;
+   position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  animation: marquee 0s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 @keyframes moving-backward {
-  0% { right: 100%; left: auto; }
-  25% { right: 50%; left: auto; }
-  50% { right: 0%; left: auto; }
-  51% { right: auto; left: 0%; }
-  75% { right: auto; left: 50%; }
-  100% { right: auto; left: 100%; }
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
 }
-
-#trial {
-  padding: 0px;
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  position: absolute;
-  left: 0;
-  right: auto;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  transition-timing-function: linear;
-  animation: moving-forward 15s infinite;
-  cursor: progress;
-}
-
-#trial-reverse {
-  padding: 0px;
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  position: absolute;
-  right: 0;
-  left: auto;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  transition-timing-function: linear;
-  animation: moving-backward 15s infinite;
-  cursor: progress;
-}
-
-

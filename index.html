@@ -27,9 +27,10 @@
                         Experience</a></button><br>
                 <a href="#certifications"><button class="certifications button"><i
                             class="fa-solid fa-certificate"></i>Certifications</a></button><br>
+                <a href="#resume"><button><i class="fa-solid fa-file"></i> Resume</a></button><br>
                 <a href="#contact"><button class="contact button"><i class="fa-solid fa-envelope"></i>
                         Contact</a></button><br>
-                <a href="#resume"><button><i class="fa-solid fa-file"></i> Resume</a></button><br>
+                
             </nav>
             <a href="https://noking1212-code.github.io/resume/"><button class="logo button"
                     title="home page"></button></a>
@@ -41,16 +42,70 @@
 
     </div>
     <div class="content">
+       
+
         <h1>Welcome to My Resume</h1>
         <p id="name">Hello! My name is prabhsamrath singh.<i class="fa-thin fa-hand-wave fa-beat-fade"
                 style="color: #74C0FC;">👋</i></p>
         <h1 id="wai">Front-end</h1>
         <h1 id="wai">web developer</h1>
-        <p>
-            Explore this site to learn more <a href="#about-me"><u>about me</u></a>, view my <a href="#projects"><u>projects</u></a>, discover my <a href="#skills"><u>skills</u></a>, review my <a href="#education"><u>education</u></a> and <a href="#experience"><u>experience</u></a>, see my <a href="#certifications"><u>certifications</u></a>, find <a href="#contact"><u>contact information</u></a>, and access my <a href="#resume"><u>resume</u></a>.
-        </p>
+        
         <p id="wa">Please feel free to browse each section for detailed information.</p>
-        <a href="#about-me"><button id="get-started" class="button">Get started</a></button>
+         <a href="#about-me"><button id="get-started" class="button">Get started</button></a>
+        <div class="og-cards-marquee">
+
+        <div class="og-cards-reverse"></div>
+        
+        <div class="og-cards-track"></div>
+
+        <div class="og-cards">
+            <div class="cards-heading">About Myself</div>
+            <div class="cards-content">Curious about the person behind the projects? <br>Read more about me.</div>
+            <div class="cards-footer"><a href="#about-me"><button class="cards-button">click here</button></a></div>
+        </div>
+
+        <div class="og-cards">
+            <div class="cards-heading">PROJECTS</div>
+            <div class="cards-content">Want to see what I've built.</div>
+            <div class="cards-footer"><a href="#projects"><button class="cards-button">click here</button></a></div>
+        </div>
+        <div class="og-cards">
+            <div class="cards-heading">Skill</div>
+            <div class="cards-content">Technologies I've mastered and continue to grow with.</div>
+            <div class="cards-footer"><a href="#skills"><button class="cards-button">click here</button></a></div>
+        </div>
+        <div class="og-cards">
+            <div class="cards-heading">Education</div>
+            <div class="cards-content">Want to see my academic background? </div>
+            <div class="cards-footer"><a href="#education"><button class="cards-button">click here</button></a></div>
+        </div>
+        <div class="og-cards">
+            <div class="cards-heading">Experience</div>
+            <div class="cards-content">My hands-on experience in the tech industry — check it out here.</div>
+            <div class="cards-footer"><a href="#experience"><button class="cards-button">click here</button></a></div>
+
+        </div>
+        <div class="og-cards">
+            <div class="cards-heading">certificates</div>
+            <div class="cards-content">Explore my certified skills and accomplishments — view certifications.</div>
+            <div class="cards-footer"><a href="#certifications"><button class="cards-button">click here</button></a></div>
+
+        </div>
+          <div class="og-cards">
+            <div class="cards-heading">Resume</div>
+            <div class="cards-content">Download or view my full resume to learn more about my journey.</div>
+            <div class="cards-footer"><a href="#resume"><button class="cards-button">click here</button></a></div>
+
+        </div>
+        <div class="og-cards">
+            <div class="cards-heading">Contact-info</div>
+            <div class="cards-content">Get in touch with me — view contact info.</div>
+            <div class="cards-footer"><a href="#contact"><button class="cards-button">click here</button></a></div>
+        </div>
+      
+         
+    </div>
+       
     </div>
   
     <div id="about-me">
@@ -217,6 +272,18 @@
         document.getElementById('nav-toggle').onclick = function () {
             document.getElementById('nav-menu').classList.toggle('open');
         };
+                const track = document.querySelector('.og-cards-track');
+        track.innerHTML += track.innerHTML;
+
+        const trackWidth = track.scrollWidth / 10;
+        track.style.animation = `marqueeJS 20s linear infinite`;
+
+        const styleSheet = document.createElement("style");
+        styleSheet.innerText = `
+@keyframes marqueeJS {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-${trackWidth}px); }
+}`;
     </script>
 </body>
 
