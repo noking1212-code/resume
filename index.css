@@ -12,7 +12,7 @@ header{
     background-image: url('background.jpeg');
     border-bottom: 1px solid #000000;
     height: 70px;
-    position: sticky;
+    position: relative;
 }
 button{
     background: none;
@@ -66,7 +66,7 @@ footer{
 }
 #name{color: rgb(82, 75, 75);}
 #wai{color: skyblue;
-    animation: blink 2s infinite;;}
+    animation: blink 2s infinite;}
 @keyframes blink {
     0% { opacity: 1; 
             color: rgb(200, 255, 0);}
@@ -75,8 +75,12 @@ footer{
     100% { opacity: 1; 
             color: rgb(255, 0, 0);}
 }
-u{color: rgb(136, 113, 113);
-    padding-top: 10px;}
+u{color: rgb(46, 27, 91);
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+    
+  }
 #get-started {
     background-color: #00ff95;
     color: rgb(47, 0, 255);
@@ -111,13 +115,13 @@ padding-bottom: 10px;
 }
 .name {
     font-size: 24px;
-    background-color: #ffffff;
-    color: #000000;
+        background: linear-gradient(to right, #3B82F6,#EC4899);
+    color: rgb(23, 0, 78);
     padding: 1px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgb(124, 94, 94);
+    box-shadow: 0 2px 4px rgb(255, 251, 251);
     margin-bottom: 10px;  
-}
+    text-decoration-thickness: px;}
 .paragraph {
     font-size: 16px;
     line-height: 1.5;
@@ -129,14 +133,17 @@ padding-bottom: 10px;
 }
 .nav-menu {
   display: none;
+  align-items: center;
   flex-direction: column;
   background: #222;
   position: absolute;
   top: 60px;
-  width: 100%;
+  width: 120%;
   border-radius: 8px;
   padding: 10px;
   z-index: 10;
+
+  
 }
 .nav-menu.open {
   display: flex;
@@ -245,7 +252,7 @@ padding-bottom: 10px;
 .og-cards {
     display: inline-flex;
     position: relative;
-    height: 0px;
+    height: 1px;
     width: 1vh;
     justify-content: space-between;
     align-items: center;
@@ -402,4 +409,55 @@ background: linear-gradient(to left bottom, #020024, #090979, #00d4ff);
 @keyframes moving-backward {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
+}
+body {
+  scroll-behavior: smooth;
+}
+a {
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: #ff0000;
+  text-shadow: 0 0 5px #cc00ff;
+transition: all 0.45s ease-in-out;}
+
+.about-me-u{
+color: #f700ff;
+font-size: 20px;}
+
+@keyframes icon-blink { 0% { opacity: 1;}
+
+    100% { opacity: 0;}
+    
+}
+.resume button{
+  display:flex;
+  align-items: end;
+justify-content: end;
+}
+
+.resume-header{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0x 0x;
+}
+
+
+
+.light-mode:hover{
+  border-style: solid;
+  background-color: #000000;
+  border-color: #a89a9a;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  border-width: 2px;
+}
+.dark-mode{
+  background-color: #ffffff;
+}
+#dark-button{
+    background-color: #3cff00;
+  border-color: #a89a9a;
+  color: white;
 }
